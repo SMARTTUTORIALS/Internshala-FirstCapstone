@@ -10,6 +10,7 @@ body{
     background-color: lightgrey;
 }
 
+/*header and nav bar styling */
 .header-row-1 {
     background-color: var(--bg-color-main);
     vertical-align: middle;
@@ -70,6 +71,8 @@ body{
     background-color: var(--bg-color-nav-hover);
 }
 
+/*media query to stop the hover open dropdown effect on smaller devices*/
+
 @media screen and (min-width: 992px) {
     .dropdown:hover .dropdown-menu {
         display: block;
@@ -96,11 +99,15 @@ body{
 }
 
 /*Carousel Item Styling*/
+.site-main-card{
+    height: 38rem;
+}
+
 .bg-image {
     filter: blur(5px);
     -webkit-filter: blur(5px);
     width: 100vw;
-    height: 500px;
+    height: 100vh;
     object-fit: cover;
 }
 
@@ -128,12 +135,14 @@ body{
 /*Carousel Card styles*/
 
 .card {
+    min-width: 16rem;
     width: 16rem;
     background-color: #212e53;
     color: aliceblue;
 }
 
 .card-img-top{
+    min-height: 22rem;
     height: 22rem;
 }
 
