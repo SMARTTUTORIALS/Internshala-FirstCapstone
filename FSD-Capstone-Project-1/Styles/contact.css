@@ -1,0 +1,49 @@
+:root {
+    --bg-color-main: #a0512dc4;
+    --logo-font-main: 'Lobster', cursive;
+    --logo-font-color: wheat;
+    --bg-color-navbar: #f3ddc5;
+    --bg-color-nav-hover: #f0b87c;
+    --bg-color-card: #212e53;
+    --font-color-card-text: aliceblue;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+h1{
+    color: var(--bg-color-card);
+    font-family: var(--logo-font-main);
+    font-size: 3rem;
+    
+}
+
+/*Carousel Item Styling*/
+.site-image{
+    height: 30rem;
+}
+
+.bg-image {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    box-shadow: black 3px 3px 3px;
+}
+
+.form-control {
+    box-shadow: black 3px 3px 3px;
+}
+
+.input-group-text{
+    box-shadow: black 3px 3px 3px;
+}
+
+.btn {
+    box-shadow: black 3px 3px 3px;
+}
+
+.label-color {
+    color: var(--bg-color-card);
+}

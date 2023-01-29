@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!--Boot Strap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!--Custom Styles and Script-->
+    <link rel="stylesheet" href="../Styles/contact.css">
+
+    <title>Oleo | Contact</title>
+</head>
+
+<body>
+    <div class="container ">
+        <h1 class="text-center m-2 p-3">Contact Us</h1>
+    </div>
+    <div class="container form-control bg-dark-subtle">
+        <div class="row">
+
+            <div class="col-md d-flex justify-content-center">
+                <div class="container site-image">
+
+                    <img src="https://images.unsplash.com/photo-1525299374597-911581e1bdef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1900&q=80"
+                        alt="Main Image" class="d-block w-100 bg-image">
+                </div>
+            </div>
+
+            <div class="col-md">
+                <div class="container ">
+                    <form class="form-floating mt-5 mb-5">
+
+                        <div class="input-group has-validation mb-3">
+                            <span class="input-group-text"><i class="fa-2x fa-solid fa-user"></i></span>
+                            <div class="form-floating" id="name-validate">
+                                <input type="text" class="form-control" id="name-input" placeholder="John Doe" required>
+                                <label for="name-input" class="label-color">Your Name</label>
+                            </div>
+                            <div class="invalid-feedback">
+                                Please enter your name.
+                            </div>
+                        </div>
+
+                        <div class="input-group has-validation mb-3">
+                            <span class="input-group-text"><i class="fa-2x fa-solid fa-envelope"></i></span>
+                            <div class="form-floating" id="email-validate">
+                                <input type="email" class="form-control" id="email-id" placeholder="name@example.com"
+                                    required>
+                                <label for="email-id" class="label-color">Email ID</label>
+                            </div>
+                            <div class="invalid-feedback">
+                                Please enter a valid Email ID.
+                            </div>
+                        </div>
+
+
+                        <div class="input-group has-validation mb-3">
+                            <span class="input-group-text"><i class="fa-2x fa-solid fa-phone"></i></span>
+                            <div class="form-floating" id="contact-validate">
+                                <input type="text" class="form-control" id="contact-no" placeholder="+91-846266135"
+                                    data-mdb-input-mask="+91 999-999-999" required>
+                                <label for="contact-no" class="label-color">Phone No.</label>
+                            </div>
+                            <div class="invalid-feedback">
+                                Please enter a valid Phone number.
+                            </div>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Type your message here" id="message-text"
+                                style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Type your message here.</label>
+                        </div>
+
+                        <button type="button" class="btn btn-primary w-100" onclick="submitMessage()">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
