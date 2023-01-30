@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!--Boot Strap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!--Custom Styles and Script-->
+    <link rel="stylesheet" href="../Styles/home.css">
+
+    <script src="../Scripts/utility.js"></script>
+    <script src="../Scripts/allmenproducts.js"></script>
+
+    <title>Oleo | Men Collection</title>
+</head>
+
+<body onload="initializeSectional()">
+
+    <div class="container-fluid" id="header">
+        <div class="row row-gap-2 header-row-1">
+            <div class="col-sm-2">
+                <p class="site-name text-center">Oleo</p>
+            </div>
+            <div class="col-sm-8 mt-2">
+                <div class="input-group">
+                    <input type="text" class="form-control search-input" id="search-query"
+                        placeholder="Product name, Category name, etc." aria-label="search-query"
+                        aria-describedby="btn-search">
+                    <button class="btn btn-warning" type="button" id="btn-search">Search</button>
+                </div>
+            </div>
+            <div class="col-md-2 mt-2">
+                <div class="row row-gap-2 justify-content-end">
+                    <div class="col-md-8 d-md-flex justify-content-md-end">
+                        <a class="btn btn-warning" type="button" id="btn-login" href="login.html">Login</a>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="nav-link" href="cart.html">
+                            <i class="fa fa-2x fa-cart-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row nav-content">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand justify-content-center">
+                    <ul class="navbar-nav flex-wrap justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="allproducts.html">All Products</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Women
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#" onclick="redirectPage('allwomenproducts.html','')">All</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="redirectPage('allwomenproducts.html','dresses')">Dresses</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="redirectPage('allwomenproducts.html','pants')">Pants</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="redirectPage('allwomenproducts.html','skirts')">Skirts</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Men
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#" onclick="redirectPage('allmenproducts.html','')">All</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="redirectPage('allmenproducts.html','dress')">Dress Sets</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="redirectPage('allmenproducts.html','shirts')">Shirts & Pants</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="redirectPage('allmenproducts.html','hoodies')">Hoodies</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="kidsproducts.html">Kids</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid d-flex flex-column" >
+        <div class="container-fluid" id="dress-section">
+            <h2 class="text-center" id="dress">Dress Sets</h2>
+            <div class="container">
+
+                <div class="row row-gap-1 column-gap-2 p-3 justify-content-center">
+
+                    <div class="col-md d-flex justify-content-center">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/512p0UjMMTL._UL1440_.jpg" class="card-img-top"
+                                alt="Navy Blue/Black Printed Kurta For Men">
+                            <div class="card-body text-center">
+                                <h5 class="card-title ">Men's Printed Kurta</h5>
+                                <h6 class="card-subtitle mb-2 ">₹764.00</h6>
+                                <p class="card-text">Sree Designs Latest collection of Navy Blue/Black
+                                    Printed Kurta For Men</p>
+                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                    Add
+                                    to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md d-flex justify-content-center">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/61MBWjQWxNS._UL1280_.jpg"
+                                class="card-img-top" alt="Amzira Kurta Set">
+                            <div class="card-body text-center">
+                                <h5 class="card-title ">Amzira Kurta Set</h5>
+                                <h6 class="card-subtitle mb-2 ">₹1,475.00</h6>
+                                <p class="card-text">Men's Traditional Ethnic Wear Indo Western Dress Set </p>
+                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                    Add
+                                    to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md d-flex justify-content-center">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/91OiTa1A5vL._UL1500_.jpg" class="card-img-top"
+                                alt="Manyavar Men's Silk Regular Kurta Pyjama with Waist Coat">
+                            <div class="card-body text-center">
+                                <h5 class="card-title ">Manyavar Silk Kurta</h5>
+                                <h6 class="card-subtitle mb-2 ">₹5,649.00</h6>
+                                <p class="card-text">Manyavar Men's Silk Regular Kurta Pyjama with Waist Coat</p>
+                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                    Add
+                                    to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md d-flex justify-content-center">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/51JeVGmLD5L._UL1500_.jpg" class="card-img-top"
+                                alt="Men's 3 Piece Slim Fit Suits-NL-Jaguar 3">
+                            <div class="card-body text-center">
+                                <h5 class="card-title ">Peter England</h5>
+                                <h6 class="card-subtitle mb-2 ">₹10,699.00</h6>
+                                <p class="card-text">Men's 3 Piece Slim Fit Suits-NL-Jaguar 3</p>
+                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                    Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="shirts-section">
+            <h2 class="text-center" id="shirts">Shirts & Pants</h2>
+            <div class="container">
+
+                <div class="row row-gap-1 column-gap-2 p-3 justify-content-center">
+
+                    <div class="col-md d-flex justify-content-center">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/91EWDo4+-XL._UL1500_.jpg" class="card-img-top"
+                                alt="Diverse Men Cotton Formal Shirt">
+                            <div class="card-body text-center">
+                                <h5 class="card-title ">Cotton Formal Shirt</h5>
+                                <h6 class="card-subtitle mb-2 ">₹764.00</h6>
+                                <p class="card-text">Diverse Men Cotton Formal Shirt</p>
+                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                    Add
+                                    to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md d-flex justify-content-center">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/31uxzV+d8PS.jpg" class="card-img-top"
+                                alt="Lycra-Cotton Shirt">
+                            <div class="card-body text-center">
+                                <h5 class="card-title ">Lycra-Cotton Shirt</h5>
+                                <h6 class="card-subtitle mb-2 ">₹475.00</h6>
+                                <p class="card-text">Aanchlik Gramin Men's Lycra-Cotton Layered Design
+                                    Stylish Full Sleeves Casual Shirt</p>
+                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                    Add
+                                    to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md d-flex justify-content-center">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/61aqWbQnipL._UL1500_.jpg" class="card-img-top"
+                                alt="Dark Grey Trousers">
+                            <div class="card-body text-center">
+                                <h5 class="card-title ">Dark Grey Trousers</h5>
+                                <h6 class="card-subtitle mb-2 ">₹1,649.00</h6>
+                                <p class="card-text">Raymond Premium Suit Collection Light Checkered
+                                    Dark Grey Trousers</p>
+                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                    Add
+                                    to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md d-flex justify-content-center">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/418BsGmgGdL._SL1000_.jpg" class="card-img-top"
+                                alt="Royal Enfield Solid Cotton Regular Mens Trousers">
+                            <div class="card-body text-center">
+                                <h5 class="card-title ">Royal Enfield Trousers</h5>
+                                <h6 class="card-subtitle mb-2 ">₹1,699.00</h6>
+                                <p class="card-text">Royal Enfield Solid Cotton Regular Mens Trousers</p>
+                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                    Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="hoodie-section">
+            <h2 class="text-center" id="hoodies">Hoodies</h2>
+            <div class="container">
+
+                <div class="row row-gap-1 column-gap-2 p-3 justify-content-center">
+
+                    <div class="col-md d-flex justify-content-center">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/61I5T4eyPVL._UL1427_.jpg" class="card-img-top"
+                                alt="Trillion Men's Printed Hooded Sweatshirt">
+                            <div class="card-body text-center">
+                                <h5 class="card-title ">Trillion Printed Hoodie</h5>
+                                <h6 class="card-subtitle mb-2 ">₹764.00</h6>
+                                <p class="card-text">Trillion Men's Printed Hooded Sweatshirt</p>
+                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                    Add
+                                    to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md d-flex justify-content-center">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/61dK5GWyBDL._UL1500_.jpg" class="card-img-top"
+                                alt="TRIPR Full Sleeve Printed Men Sweatshirt">
+                            <div class="card-body text-center">
+                                <h5 class="card-title ">TRIPR Printed Hoodie</h5>
+                                <h6 class="card-subtitle mb-2 ">₹475.00</h6>
+                                <p class="card-text">TRIPR Full Sleeve Printed Men Sweatshirt</p>
+                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                    Add
+                                    to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md d-flex justify-content-center">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/61aqWbQnipL._UL1500_.jpg" class="card-img-top"
+                                alt="Dark Grey Trousers">
+                            <div class="card-body text-center">
+                                <h5 class="card-title ">Dark Grey Trousers</h5>
+                                <h6 class="card-subtitle mb-2 ">₹1,649.00</h6>
+                                <p class="card-text">Raymond Premium Suit Collection Light Checkered
+                                    Dark Grey Trousers</p>
+                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                    Add
+                                    to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md d-flex justify-content-center">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/71wIFf8FDVL._UL1500_.jpg" class="card-img-top"
+                                alt="Smart Fleece Hoodie">
+                            <div class="card-body text-center">
+                                <h5 class="card-title ">Smart Fleece Hoodie</h5>
+                                <h6 class="card-subtitle mb-2 ">₹699.00</h6>
+                                <p class="card-text">Dagcros Men's Eco Smart Fleece Sweatshirt, Plush
+                                    Fleece Pullover Hoodie</p>
+                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                    Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid text-bg-dark " id="footer">
+        <div class="row row-gap-2 pt-4 justify-content-center">
+            <div class="col-md text-center">
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allwomenproducts.html','')">
+                    <h4><strong>Women</strong></h4>
+                </a>
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allwomenproducts.html','dresses')">Dresses</a>
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allwomenproducts.html','pants')">Pants</a>
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allwomenproducts.html','skirts')">Skirts</a>
+            </div>
+            <div class="col-md text-center">
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allmenproducts.html','')">
+                    <h4><strong>Men</strong></h4>
+                </a>
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allmenproducts.html','dress')">Dress Sets</a>
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allmenproducts.html','shirts')">Shirts & Pants</a>
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allmenproducts.html','hoodies')">Hoodies</a>
+            </div>
+            <div class="col-md text-center">
+                <a class="nav-link footer-link" href="kidsproducts.html">
+                    <h4><strong>Kids</strong></h4>
+                </a>
+            </div>
+            <div class="col-md text-center">
+                <a class="nav-link footer-link" >
+                    <h4><strong>Links</strong></h4>
+                </a>
+                <a class="nav-link footer-link" href="home.html">Home</a>
+                <a class="nav-link footer-link" href="login.html">Login</a>
+                <a class="nav-link footer-link" href="contact.html">Contact</a>
+            </div>
+
+        </div>
+        <hr class="border border-light opacity-20">
+        <div class="text-center">
+            <p class="copyright pb-4 text-light">
+                Copyright ©Oleo 2022-23
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

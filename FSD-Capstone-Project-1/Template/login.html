@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="../Styles/login.css">
 
     <script src="../Scripts/login.js"></script>
+    <script src="../Scripts/utility.js"></script>
 
     <title>Oleo | Login</title>
 </head>
@@ -31,7 +32,6 @@
 <body onload="initialize()">
 
     
-
     <div class="container-fluid d-flex flex-column flex-nowrap justify-content-center">
         <div class="container mt-5 mb-5 form-container">
             <h1 class="text-center m-2 p-3">Login</h1>
@@ -74,12 +74,58 @@
                     </div>
 
                     <button type="button" class="btn btn-primary w-100" onclick="validateLogin()">Login</button>
+                    <p class="text-center mt-1">
+                        <span class="me-2"><a href="#">Don't have account? Sign Up</a></span>
+                        <span class="ms-2"><a href="home.html">Home</a></span>
+                    </p>
                   </form>
 
                   
             </div>
         </div>
     </div>
+
+    <div class="container-fluid text-bg-dark " id="footer">
+        <div class="row row-gap-2 pt-4 justify-content-center">
+            <div class="col-md text-center">
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allwomenproducts.html','')">
+                    <h4><strong>Women</strong></h4>
+                </a>
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allwomenproducts.html','dresses')">Dresses</a>
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allwomenproducts.html','pants')">Pants</a>
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allwomenproducts.html','skirts')">Skirts</a>
+            </div>
+            <div class="col-md text-center">
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allmenproducts.html','')">
+                    <h4><strong>Men</strong></h4>
+                </a>
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allmenproducts.html','dress')">Dress Sets</a>
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allmenproducts.html','shirts')">Shirts & Pants</a>
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allmenproducts.html','hoodies')">Hoodies</a>
+            </div>
+            <div class="col-md text-center">
+                <a class="nav-link footer-link" href="kidsproducts.html">
+                    <h4><strong>Kids</strong></h4>
+                </a>
+            </div>
+            <div class="col-md text-center">
+                <a class="nav-link footer-link" >
+                    <h4><strong>Links</strong></h4>
+                </a>
+                <a class="nav-link footer-link" href="home.html">Home</a>
+                <a class="nav-link footer-link" href="login.html">Login</a>
+                <a class="nav-link footer-link" href="contact.html">Contact</a>
+            </div>
+
+        </div>
+        <hr class="border border-light opacity-20">
+        <div class="text-center">
+            <p class="copyright pb-4 text-light">
+                Copyright ©Oleo 2022-23
+            </p>
+        </div>
+    </div>
+
 </body>
 
 </html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!--Boot Strap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!--Custom Styles and Script-->
+    <link rel="stylesheet" href="../Styles/home.css">
+
+    <script src="../Scripts/utility.js"></script>
+
+    <title>Oleo | All Products</title>
+</head>
+
+<body>
+
+    <div class="container-fluid" id="header">
+        <div class="row row-gap-2 header-row-1">
+            <div class="col-sm-2">
+                <p class="site-name text-center">Oleo</p>
+            </div>
+            <div class="col-sm-8 mt-2">
+                <div class="input-group">
+                    <input type="text" class="form-control search-input" id="search-query"
+                        placeholder="Product name, Category name, etc." aria-label="search-query"
+                        aria-describedby="btn-search">
+                    <button class="btn btn-warning" type="button" id="btn-search">Search</button>
+                </div>
+            </div>
+            <div class="col-md-2 mt-2">
+                <div class="row row-gap-2 justify-content-end">
+                    <div class="col-md-8 d-md-flex justify-content-md-end">
+                        <a class="btn btn-warning" type="button" id="btn-login" href="login.html">Login</a>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="nav-link" href="cart.html">
+                            <i class="fa fa-2x fa-cart-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row nav-content">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand justify-content-center">
+                    <ul class="navbar-nav flex-wrap justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="allproducts.html">All Products</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Women
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"
+                                        onclick="redirectPage('allwomenproducts.html','')">All</a></li>
+                                <li><a class="dropdown-item" href="#"
+                                        onclick="redirectPage('allwomenproducts.html','dresses')">Dresses</a></li>
+                                <li><a class="dropdown-item" href="#"
+                                        onclick="redirectPage('allwomenproducts.html','pants')">Pants</a></li>
+                                <li><a class="dropdown-item" href="#"
+                                        onclick="redirectPage('allwomenproducts.html','skirts')">Skirts</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Men
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"
+                                        onclick="redirectPage('allmenproducts.html','')">All</a></li>
+                                <li><a class="dropdown-item" href="#"
+                                        onclick="redirectPage('allmenproducts.html','dress')">Dress Sets</a></li>
+                                <li><a class="dropdown-item" href="#"
+                                        onclick="redirectPage('allmenproducts.html','shirts')">Shirts & Pants</a></li>
+                                <li><a class="dropdown-item" href="#"
+                                        onclick="redirectPage('allmenproducts.html','hoodies')">Hoodies</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="kidsproducts.html">Kids</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid d-flex flex-column" id="all-products">
+        <div class="container-fluid">
+            <h2 class="text-center">All products</h2>
+            <div class="container">
+                <div class="row row-gap-3 column-gap-1 p-3 ">
+
+                    <div class="col-md d-flex justify-content-center">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/61k8xSITJHL._UL1500_.jpg" class="card-img-top"
+                                alt="Women's Ruffle Sleeves Bodycon Slit Maxi Dress">
+                            <div class="card-body text-center">
+                                <h5 class="card-title ">Ruffle Sleeves Bodycon</h5>
+                                <h6 class="card-subtitle mb-2 ">₹379.00</h6>
+                                <p class="card-text">Sheetal Associates Women's Ruffle Sleeves Bodycon
+                                    Slit Maxi Dress</p>
+                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                    Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md d-flex justify-content-center">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/71x8CNwHQkS._UL1500_.jpg" class="card-img-top"
+                                alt="PURVAJA Women's Maxi Empire Waist Dress">
+                            <div class="card-body text-center">
+                                <h5 class="card-title ">Purvaja Waist Dress</h5>
+                                <h6 class="card-subtitle mb-2 ">₹444.00</h6>
+                                <p class="card-text">PURVAJA Women's Maxi Empire Waist Dress -
+                                    Multicolour</p>
+                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                    Add
+                                    to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md d-flex justify-content-center">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/91szMYbqKlS._UL1500_.jpg" class="card-img-top"
+                                alt="Anarkali Gown">
+                            <div class="card-body text-center">
+                                <h5 class="card-title ">Anarkali Gown</h5>
+                                <h6 class="card-subtitle mb-2 ">₹2,299.00</h6>
+                                <p class="card-text">Royal Export Women's Long Latest net Fabric
+                                    Embroidered Anarkali Gown</p>
+                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                    Add
+                                    to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md d-flex justify-content-center">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/91pDtsGZfDL._AC_UL320_.jpg"
+                                class="card-img-top" alt="Diamo Skirt">
+                            <div class="card-body text-center">
+                                <h5 class="card-title ">Diamo Skirt</h5>
+                                <h6 class="card-subtitle mb-2 ">₹447.00</h6>
+                                <p class="card-text">Rajasthani Jaipuri Traditional Block Print Cotton
+                                    Blend Women Long Skirt</p>
+                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                    Add
+                                    to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md d-flex justify-content-center">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/512p0UjMMTL._UL1440_.jpg" class="card-img-top"
+                                alt="Navy Blue/Black Printed Kurta For Men">
+                            <div class="card-body text-center">
+                                <h5 class="card-title ">Men's Printed Kurta</h5>
+                                <h6 class="card-subtitle mb-2 ">₹764.00</h6>
+                                <p class="card-text">Sree Designs Latest collection of Navy Blue/Black
+                                    Printed Kurta For Men</p>
+                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                    Add
+                                    to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md d-flex justify-content-center">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/31uxzV+d8PS.jpg" class="card-img-top"
+                                alt="Lycra-Cotton Shirt">
+                            <div class="card-body text-center">
+                                <h5 class="card-title ">Lycra-Cotton Shirt</h5>
+                                <h6 class="card-subtitle mb-2 ">₹475.00</h6>
+                                <p class="card-text">Aanchlik Gramin Men's Lycra-Cotton Layered Design
+                                    Stylish Full Sleeves Casual Shirt</p>
+                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                    Add
+                                    to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md d-flex justify-content-center">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/61aqWbQnipL._UL1500_.jpg" class="card-img-top"
+                                alt="Dark Grey Trousers">
+                            <div class="card-body text-center">
+                                <h5 class="card-title ">Dark Grey Trousers</h5>
+                                <h6 class="card-subtitle mb-2 ">₹1,649.00</h6>
+                                <p class="card-text">Raymond Premium Suit Collection Light Checkered
+                                    Dark Grey Trousers</p>
+                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                    Add
+                                    to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md d-flex justify-content-center">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/71wIFf8FDVL._UL1500_.jpg" class="card-img-top"
+                                alt="Smart Fleece Hoodie">
+                            <div class="card-body text-center">
+                                <h5 class="card-title ">Smart Fleece Hoodie</h5>
+                                <h6 class="card-subtitle mb-2 ">₹699.00</h6>
+                                <p class="card-text">Dagcros Men's Eco Smart Fleece Sweatshirt, Plush
+                                    Fleece Pullover Hoodie</p>
+                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                    Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md d-flex justify-content-center">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/51yJKL5e96L.jpg" class="card-img-top"
+                                alt="Rainbow Creations Girl's Cotton Dress">
+                            <div class="card-body text-center">
+                                <h5 class="card-title ">Rainbow Creations</h5>
+                                <h6 class="card-subtitle mb-2 ">₹999.00</h6>
+                                <p class="card-text">Rainbow Creations Dark Apparel Girl's Cotton Dress
+                                </p>
+                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                    Add
+                                    to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md d-flex justify-content-center">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/71B7111yWSL._UL1500_.jpg" class="card-img-top"
+                                alt="Girls Bubble Dress">
+                            <div class="card-body text-center">
+                                <h5 class="card-title ">Rainbow Creations</h5>
+                                <h6 class="card-subtitle mb-2 ">₹475.00</h6>
+                                <p class="card-text">Stylish cute comfy girls bubble dress</p>
+                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                    Add
+                                    to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md d-flex justify-content-center">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/81pSpLSTAVL._UL1500_.jpg" class="card-img-top"
+                                alt="Kids Ethnic Wear Pyjama Waistcoat set for boys">
+                            <div class="card-body text-center">
+                                <h5 class="card-title ">Dezines Ethnic Wear</h5>
+                                <h6 class="card-subtitle mb-2 ">₹899.00</h6>
+                                <p class="card-text">Ethnic Wear Kurta Pyjama Waistcoat Set for Boys</p>
+                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                    Add
+                                    to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md d-flex justify-content-center">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/71ZOF5gAkYL._UL1500_.jpg" class="card-img-top"
+                                alt="Kids Indo Western Sherwani Set For Boys">
+                            <div class="card-body text-center">
+                                <h5 class="card-title ">Indo Western Sherwani</h5>
+                                <h6 class="card-subtitle mb-2 ">₹1,799.00</h6>
+                                <p class="card-text">Kids Indo Western Sherwani Set For Boys</p>
+                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                    Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="container-fluid text-bg-dark " id="footer">
+        <div class="row row-gap-2 pt-4 justify-content-center">
+            <div class="col-md text-center">
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allwomenproducts.html','')">
+                    <h4><strong>Women</strong></h4>
+                </a>
+                <a class="nav-link footer-link" href="#"
+                    onclick="redirectPage('allwomenproducts.html','dresses')">Dresses</a>
+                <a class="nav-link footer-link" href="#"
+                    onclick="redirectPage('allwomenproducts.html','pants')">Pants</a>
+                <a class="nav-link footer-link" href="#"
+                    onclick="redirectPage('allwomenproducts.html','skirts')">Skirts</a>
+            </div>
+            <div class="col-md text-center">
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allmenproducts.html','')">
+                    <h4><strong>Men</strong></h4>
+                </a>
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allmenproducts.html','dress')">Dress
+                    Sets</a>
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allmenproducts.html','shirts')">Shirts &
+                    Pants</a>
+                <a class="nav-link footer-link" href="#"
+                    onclick="redirectPage('allmenproducts.html','hoodies')">Hoodies</a>
+            </div>
+            <div class="col-md text-center">
+                <a class="nav-link footer-link" href="kidsproducts.html">
+                    <h4><strong>Kids</strong></h4>
+                </a>
+            </div>
+            <div class="col-md text-center">
+                <a class="nav-link footer-link">
+                    <h4><strong>Links</strong></h4>
+                </a>
+                <a class="nav-link footer-link" href="home.html">Home</a>
+                <a class="nav-link footer-link" href="login.html">Login</a>
+                <a class="nav-link footer-link" href="contact.html">Contact</a>
+            </div>
+
+        </div>
+        <hr class="border border-light opacity-20">
+        <div class="text-center">
+            <p class="copyright pb-4 text-light">
+                Copyright ©Oleo 2022-23
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

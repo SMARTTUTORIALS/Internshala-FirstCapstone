@@ -10,6 +10,13 @@
 
 body{
     background-color: lightgrey;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer{
+    margin-top: auto;
 }
 
 h1{
@@ -47,3 +54,4 @@ h1{
 .label-color {
     color: var(--bg-color-card);
 }
+

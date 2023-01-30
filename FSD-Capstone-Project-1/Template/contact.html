@@ -22,11 +22,17 @@
 
     <!--Custom Styles and Script-->
     <link rel="stylesheet" href="../Styles/contact.css">
+    
+    <script src="../Scripts/contact.js"></script>
+    <script src="../Scripts/utility.js"></script>
 
     <title>Oleo | Contact</title>
 </head>
 
-<body>
+<body onload="initialize()">
+
+    
+
     <div class="container ">
         <h1 class="text-center m-2 p-3">Contact Us</h1>
     </div>
@@ -42,8 +48,9 @@
             </div>
 
             <div class="col-md">
-                <div class="container ">
-                    <form class="form-floating mt-5 mb-5">
+                <div class="container">
+
+                    <form class="form-floating mt-5 mb-5" id="form-container">
 
                         <div class="input-group has-validation mb-3">
                             <span class="input-group-text"><i class="fa-2x fa-solid fa-user"></i></span>
@@ -83,14 +90,66 @@
 
                         <div class="form-floating mb-3">
                             <textarea class="form-control" placeholder="Type your message here" id="message-text"
-                                style="height: 100px"></textarea>
+                                style="height: 100px" required></textarea>
                             <label for="floatingTextarea2">Type your message here.</label>
                         </div>
 
                         <button type="button" class="btn btn-primary w-100" onclick="submitMessage()">Submit</button>
                     </form>
+
+                    <div class="alert alert-success alert-dismissible d-flex align-items-center fade show" role="alert" id="success-alert">
+                        <span><strong>Message sent Successfully!</strong> We will reach out to you soon.</span>
+                        <button type="button" class="btn-close" onclick="dismissAlert('success-alert')" aria-label="Close"></button>
+                    </div>
+    
+                    <div class="alert alert-danger alert-dismissible d-flex align-items-center fade show" role="alert" id="danger-alert">
+                        <span><strong>Sorry!</strong> Please fill out the required fields. Please try again.</span>
+                        <button type="button" class="btn-close" onclick="dismissAlert('danger-alert')" aria-label="Close"></button>
+                    </div>
+
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="container-fluid text-bg-dark " id="footer">
+        <div class="row row-gap-2 pt-4 justify-content-center">
+            <div class="col-md text-center">
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allwomenproducts.html','')">
+                    <h4><strong>Women</strong></h4>
+                </a>
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allwomenproducts.html','dresses')">Dresses</a>
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allwomenproducts.html','pants')">Pants</a>
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allwomenproducts.html','skirts')">Skirts</a>
+            </div>
+            <div class="col-md text-center">
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allmenproducts.html','')">
+                    <h4><strong>Men</strong></h4>
+                </a>
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allmenproducts.html','dress')">Dress Sets</a>
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allmenproducts.html','shirts')">Shirts & Pants</a>
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allmenproducts.html','hoodies')">Hoodies</a>
+            </div>
+            <div class="col-md text-center">
+                <a class="nav-link footer-link" href="kidsproducts.html">
+                    <h4><strong>Kids</strong></h4>
+                </a>
+            </div>
+            <div class="col-md text-center">
+                <a class="nav-link footer-link" >
+                    <h4><strong>Links</strong></h4>
+                </a>
+                <a class="nav-link footer-link" href="home.html">Home</a>
+                <a class="nav-link footer-link" href="login.html">Login</a>
+                <a class="nav-link footer-link" href="contact.html">Contact</a>
+            </div>
+
+        </div>
+        <hr class="border border-light opacity-20">
+        <div class="text-center">
+            <p class="copyright pb-4 text-light">
+                Copyright ©Oleo 2022-23
+            </p>
         </div>
     </div>
 </body>

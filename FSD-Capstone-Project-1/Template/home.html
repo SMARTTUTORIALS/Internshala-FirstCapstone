@@ -23,6 +23,8 @@
     <!--Custom Styles and Script-->
     <link rel="stylesheet" href="../Styles/home.css">
 
+    <script src="../Scripts/utility.js"></script>
+
     <title>Oleo | Home</title>
 </head>
 
@@ -46,7 +48,7 @@
                         <a class="btn btn-warning" type="button" id="btn-login" href="login.html">Login</a>
                     </div>
                     <div class="col-md-4">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="cart.html">
                             <i class="fa fa-2x fa-cart-shopping"></i>
                         </a>
                     </div>
@@ -62,7 +64,7 @@
                             <a class="nav-link active" aria-current="page" href="home.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">All Products</a>
+                            <a class="nav-link" aria-current="page" href="allproducts.html">All Products</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -70,10 +72,10 @@
                                 Women
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">All</a></li>
-                                <li><a class="dropdown-item" href="#">Dresses</a></li>
-                                <li><a class="dropdown-item" href="#">Pants</a></li>
-                                <li><a class="dropdown-item" href="#">Skirts</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="redirectPage('allwomenproducts.html','')">All</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="redirectPage('allwomenproducts.html','dresses')">Dresses</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="redirectPage('allwomenproducts.html','pants')">Pants</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="redirectPage('allwomenproducts.html','skirts')">Skirts</a></li>
                             </ul>
 
                         </li>
@@ -83,15 +85,15 @@
                                 Men
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">All</a></li>
-                                <li><a class="dropdown-item" href="#">Dress Sets</a></li>
-                                <li><a class="dropdown-item" href="#">Shirts & Pants</a></li>
-                                <li><a class="dropdown-item" href="#">Hoodies</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="redirectPage('allmenproducts.html','')">All</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="redirectPage('allmenproducts.html','dress')">Dress Sets</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="redirectPage('allmenproducts.html','shirts')">Shirts & Pants</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="redirectPage('allmenproducts.html','hoodies')">Hoodies</a></li>
                             </ul>
 
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Kids</a>
+                            <a class="nav-link" aria-current="page" href="kidsproducts.html">Kids</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
@@ -156,7 +158,7 @@
                                                 <h6 class="card-subtitle mb-2 ">₹379.00</h6>
                                                 <p class="card-text">Sheetal Associates Women's Ruffle Sleeves Bodycon
                                                     Slit Maxi Dress</p>
-                                                <a href="#" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
                                                     Add to Cart</a>
                                             </div>
                                         </div>
@@ -171,7 +173,7 @@
                                                 <h6 class="card-subtitle mb-2 ">₹444.00</h6>
                                                 <p class="card-text">PURVAJA Women's Maxi Empire Waist Dress -
                                                     Multicolour</p>
-                                                <a href="#" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
                                                     Add
                                                     to Cart</a>
                                             </div>
@@ -187,7 +189,7 @@
                                                 <h6 class="card-subtitle mb-2 ">₹2,299.00</h6>
                                                 <p class="card-text">Royal Export Women's Long Latest net Fabric
                                                     Embroidered Anarkali Gown</p>
-                                                <a href="#" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
                                                     Add
                                                     to Cart</a>
                                             </div>
@@ -203,7 +205,7 @@
                                                 <h6 class="card-subtitle mb-2 ">₹447.00</h6>
                                                 <p class="card-text">Rajasthani Jaipuri Traditional Block Print Cotton
                                                     Blend Women Long Skirt</p>
-                                                <a href="#" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
                                                     Add
                                                     to Cart</a>
                                             </div>
@@ -236,7 +238,7 @@
                                                 <h6 class="card-subtitle mb-2 ">₹764.00</h6>
                                                 <p class="card-text">Sree Designs Latest collection of Navy Blue/Black
                                                     Printed Kurta For Men</p>
-                                                <a href="#" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
                                                     Add
                                                     to Cart</a>
                                             </div>
@@ -252,7 +254,7 @@
                                                 <h6 class="card-subtitle mb-2 ">₹475.00</h6>
                                                 <p class="card-text">Aanchlik Gramin Men's Lycra-Cotton Layered Design
                                                     Stylish Full Sleeves Casual Shirt</p>
-                                                <a href="#" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
                                                     Add
                                                     to Cart</a>
                                             </div>
@@ -268,7 +270,7 @@
                                                 <h6 class="card-subtitle mb-2 ">₹1,649.00</h6>
                                                 <p class="card-text">Raymond Premium Suit Collection Light Checkered
                                                     Dark Grey Trousers</p>
-                                                <a href="#" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
                                                     Add
                                                     to Cart</a>
                                             </div>
@@ -284,7 +286,7 @@
                                                 <h6 class="card-subtitle mb-2 ">₹699.00</h6>
                                                 <p class="card-text">Dagcros Men's Eco Smart Fleece Sweatshirt, Plush
                                                     Fleece Pullover Hoodie</p>
-                                                <a href="#" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
                                                     Add to Cart</a>
                                             </div>
                                         </div>
@@ -315,7 +317,7 @@
                                                 <h6 class="card-subtitle mb-2 ">₹999.00</h6>
                                                 <p class="card-text">Rainbow Creations Dark Apparel Girl's Cotton Dress
                                                 </p>
-                                                <a href="#" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
                                                     Add
                                                     to Cart</a>
                                             </div>
@@ -330,7 +332,7 @@
                                                 <h5 class="card-title ">Rainbow Creations</h5>
                                                 <h6 class="card-subtitle mb-2 ">₹475.00</h6>
                                                 <p class="card-text">Stylish cute comfy girls bubble dress</p>
-                                                <a href="#" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
                                                     Add
                                                     to Cart</a>
                                             </div>
@@ -346,7 +348,7 @@
                                                 <h5 class="card-title ">Dezines Ethnic Wear</h5>
                                                 <h6 class="card-subtitle mb-2 ">₹899.00</h6>
                                                 <p class="card-text">Ethnic Wear Kurta Pyjama Waistcoat Set for Boys</p>
-                                                <a href="#" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
                                                     Add
                                                     to Cart</a>
                                             </div>
@@ -361,7 +363,7 @@
                                                 <h5 class="card-title ">Indo Western Sherwani</h5>
                                                 <h6 class="card-subtitle mb-2 ">₹1,799.00</h6>
                                                 <p class="card-text">Kids Indo Western Sherwani Set For Boys</p>
-                                                <a href="#" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
+                                                <a href="cart.html" class="btn btn-primary"><i class="fa fa-cart-shopping"></i>
                                                     Add to Cart</a>
                                             </div>
                                         </div>
@@ -390,28 +392,28 @@
     <div class="container-fluid text-bg-dark " id="footer">
         <div class="row row-gap-2 pt-4 justify-content-center">
             <div class="col-md text-center">
-                <a class="nav-link footer-link" href="#">
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allwomenproducts.html','')">
                     <h4><strong>Women</strong></h4>
                 </a>
-                <a class="nav-link footer-link" href="#">Dresses</a>
-                <a class="nav-link footer-link" href="#">Pants</a>
-                <a class="nav-link footer-link" href="#">Skirts</a>
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allwomenproducts.html','dresses')">Dresses</a>
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allwomenproducts.html','pants')">Pants</a>
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allwomenproducts.html','skirts')">Skirts</a>
             </div>
             <div class="col-md text-center">
-                <a class="nav-link footer-link" href="#">
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allmenproducts.html','')">
                     <h4><strong>Men</strong></h4>
                 </a>
-                <a class="nav-link footer-link" href="#">Dress Sets</a>
-                <a class="nav-link footer-link" href="#">Shirts & Pants</a>
-                <a class="nav-link footer-link" href="#">Hoodies</a>
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allmenproducts.html','dress')">Dress Sets</a>
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allmenproducts.html','shirts')">Shirts & Pants</a>
+                <a class="nav-link footer-link" href="#" onclick="redirectPage('allmenproducts.html','hoodies')">Hoodies</a>
             </div>
             <div class="col-md text-center">
-                <a class="nav-link footer-link" href="#">
+                <a class="nav-link footer-link" href="kidsproducts.html">
                     <h4><strong>Kids</strong></h4>
                 </a>
             </div>
             <div class="col-md text-center">
-                <a class="nav-link footer-link" href="#">
+                <a class="nav-link footer-link" >
                     <h4><strong>Links</strong></h4>
                 </a>
                 <a class="nav-link footer-link" href="home.html">Home</a>
